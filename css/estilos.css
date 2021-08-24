@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: rgb(223, 18, 18);
+}
+
+body button {
+    color: rgb(122, 236, 29);
+    background-color: rgb(229, 243, 32);
+    font-size: 28px;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btCriarPiada:hover{
+    background: #9c1046;
+    box-shadow: 5px 10px 5px #ffffff;
+}
+
+#piada-texto {
+    color: rgb(252, 248, 247);
+    font-size: x-large;
+    font-family: 'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 
+    'Lucida Sans Unicode', 
+    Geneva, Verdana, 
+    sans-serif;
+
+}
+
+.piada-texto{
+    margin-top: 30%;
+}
+
+h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
